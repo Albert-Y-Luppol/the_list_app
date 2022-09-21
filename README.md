@@ -1,2 +1,2 @@
-# the_list_app
+# The List
 Application for storing reviews
