@@ -3,14 +3,14 @@ version: "0"
 services:
   databases:
     build: ./
-    image: pg-db
-    container_name: pg-db
+    image: lst-pg-db
+    container_name: lst-pg-db
     restart: unless-stopped:0
     ports:
       - "5432:5432"
     environment:
-      - USER=admin
-      - PASSWORD=qwerty12345
-      - DB=ListDb
+      - PG_USER=admin
+      - PG_PASSWORD=qwerty12345
+      - PG_DB=ListDb
       - PG_HOST=${HOST_IP}
       - PG_PORT=5432
